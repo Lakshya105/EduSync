@@ -7,8 +7,6 @@ const Dashboard = () => {
   const navigate = useNavigate();
   const [role, setRole] = useState("");
   const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [enrolledCourses, setEnrolledCourses] = useState([]);
 
   useEffect(() => {
     const role = localStorage.getItem("role");

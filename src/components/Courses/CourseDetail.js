@@ -11,8 +11,7 @@ export default function CourseDetail() {
   const [enrolled, setEnrolled] = useState(false);
   const [enrollMsg, setEnrollMsg] = useState("");
   const userRole = getUserRole();
-  const navigate = useNavigate();
-
+  
   useEffect(() => {
     API.get(`/courses/${id}`)
       .then(res => setCourse(res.data))
