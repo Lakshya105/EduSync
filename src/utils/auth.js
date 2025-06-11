@@ -10,7 +10,6 @@ export function getUserRole() {
     return null;
   }
 }
-
 export function getUserId() {
   const token = localStorage.getItem("token");
   if (!token) return null;
